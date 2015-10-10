@@ -1,0 +1,315 @@
+body {
+2
+font-family: arial, sans-serif;
+3
+font-size: 100%; /* best for all browser using em */
+4
+padding:0; 
+5
+margin:0;
+6
+}
+7
+ 
+8
+*, html { line-height: 1.6em; }
+9
+ 
+10
+article img { width:auto; max-width:100%; height:auto; }
+11
+ 
+12
+.sidebar a, article a, header a, footer a { color: #C30; }
+13
+header a { text-decoration: none; }
+14
+ 
+15
+#wrapper {
+16
+font-size: 0.8em; /* 13px from 100% global font-size */
+17
+max-width: 960px; /* standard 1024px wide */
+18
+margin: 0 auto;
+19
+}
+20
+ 
+21
+/* css for <header> */
+22
+header {
+23
+    padding: 1em 0;
+24
+    margin: 0px;
+25
+    float: left;
+26
+    width: 100%;
+27
+}
+28
+header hgroup { width: 100%; font-weight:normal; }
+29
+ 
+30
+ 
+31
+/* css for <nav> */
+32
+nav {
+33
+    display: block;
+34
+    margin: 0 0 2em;
+35
+    padding: 0px;
+36
+    float: left;
+37
+    width: 100%;
+38
+    background-color: #181919;
+39
+}
+40
+nav ul ul {display: none;}
+41
+nav ul li:hover > ul {display: block;}
+42
+     
+43
+nav ul {
+44
+    padding: 0;
+45
+    list-style: none;
+46
+    position: relative;
+47
+    display: inline-table;
+48
+    z-index: 9999;
+49
+    margin: 0px;
+50
+    float: left;
+51
+    width: 100%;
+52
+}
+53
+nav ul:after {content: ""; clear: both; display: block;}
+54
+ 
+55
+nav ul li {float: left;}
+56
+ 
+57
+nav ul li:hover a {color: #fff;}
+58
+ 
+59
+nav ul li a {
+60
+    display: block;
+61
+    padding: 1em;
+62
+    font-size: 1.125em;
+63
+    color: #ccc;
+64
+    text-decoration: none;
+65
+    margin: 0px;
+66
+    background-color: #000;
+67
+    border-right: 1px solid #333;
+68
+}
+69
+nav ul li:last-of-type a {border-right: 1px solid transparent !important;}
+70
+ 
+71
+nav ul ul {
+72
+    background: #5f6975;
+73
+    border-radius: 0px;
+74
+    padding: 0;
+75
+    position: absolute;
+76
+    top: 100%;
+77
+    width: auto;
+78
+    float: none;
+79
+}
+80
+nav ul li:hover {
+81
+    background: #5f6975;
+82
+    color: #FFF;
+83
+}
+84
+nav ul ul li a:hover {
+85
+    background-color: #4b545f;
+86
+}
+87
+ 
+88
+nav ul ul li {
+89
+float: none;
+90
+border-bottom: 1px solid #444240;
+91
+position: relative;
+92
+}
+93
+ 
+94
+nav ul ul li a {
+95
+padding: 0.5em 1em;
+96
+font-size: 1em;
+97
+width:10em;
+98
+color: #fff;
+99
+}   
+100
+ 
+101
+ 
+102
+nav ul ul ul {
+103
+position: absolute; left: 100%; top:0;
+104
+}
+105
+ 
+106
+/* css for <section class='content'> */
+107
+section.content { width: 70%; float:left; }
+108
+.content article { width:100%; float:left; padding: 0 0 1em; margin: 0 0 1em; border-bottom: 1px solid #ddd; }
+109
+article .entry { clear:both; padding: 0 0 1em; }
+110
+h1.post-title { font-size: 1.8em; margin:0; padding:0;}
+111
+.entry.post-meta { color: #888; }
+112
+.entry.post-meta span { padding: 0 1em 0 0; }
+113
+.entry.post-content { font-size: 1.125em; margin:0; padding:0;}
+114
+ 
+115
+/* css for <aside class='sidebar'> */
+116
+aside.sidebar { width: 25%; float:right; }
+117
+aside.sidebar ul {
+118
+    width:100%;
+119
+    margin: 0px;
+120
+    padding: 0px;
+121
+    float: left;
+122
+    list-style: none;
+123
+}
+124
+aside.sidebar ul li {
+125
+    width:100%;
+126
+    margin: 0px 0px 2em;
+127
+    padding: 0px;
+128
+    float: left;
+129
+    list-style: none;
+130
+}
+131
+aside.sidebar ul li ul li {
+132
+    margin: 0px 0px 0.2em;
+133
+    padding: 0px;
+134
+}
+135
+aside.sidebar ul li ul li ul li {
+136
+    margin: 0px;
+137
+    padding: 0px 0px 0px 1em;
+138
+    width: 90%;
+139
+    font-size: 0.9em;
+140
+}
+141
+aside.sidebar ul li h3.widget-title {
+142
+    width:100%;
+143
+    margin: 0px;
+144
+    padding: 0px;
+145
+    float: left;
+146
+    font-size: 1.45em;
+147
+}
+148
+ 
+149
+/* css for <footer> */
+150
+footer {
+151
+    width: 98%;
+152
+    float:left;
+153
+    padding: 1%;
+154
+    background-color: white;
+155
+    margin-top: 2em;
+156
+}
+157
+footer .footer-left { width: 45%; float:left; text-align:left; }
+158
+footer .footer-right { width: 45%; float:right; text-align:right; }
