@@ -1,9 +1,11 @@
 jsonHash[divHTML.id].c=[
     {
-        "e": "button",
+        "e": "input","type":"image",
         "id": "buttonBLANKHTML",
         "innerHTML": "HTML Template",
-        "onclick": "window.parent.blankHTML=window.parent.htmlUnEscape(prompt(&quot;Enter HTML&quot;,window.parent.blankHTML));setTimeout(function(){window.parent.Render(false);},10);"
+"onload":"window.parent.blankHTML=window.parent.jsonHash[divHTML.id].c[0].blankHTML",
+"blankHTML":"",
+        "onclick": "window.parent.jsonHash[divHTML.id].c[0].blankHTML=window.parent.blankHTML=window.parent.htmlUnEscape(prompt(&quot;Enter HTML&quot;,window.parent.blankHTML));setTimeout(function(){window.parent.Render(false);},10);return false;"
     },
     {
         "e": "META",
