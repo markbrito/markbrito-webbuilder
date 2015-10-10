@@ -7,7 +7,7 @@ jsonHash[divHTML.id].c=[
         "src": "steel.jpg",
         "onload": "window.parent.blankHTML=window.parent.jsonHash[window.parent.divHTML.id].c[0].blankHTML;",
         "blankHTML": "<!doctype html><html> \r\t<head>\r\t<meta charset='utf-8'/>\r<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'/>\r<meta name='description' content=''/>\r<meta name='author' content=''/>\r<meta name='viewport' content='width=device-width,initial-scale=1'/>\r<title>TITLE</title>\r\t<script language='javascript' type='text/javascript' src='jq.js'></script>\r\t<script language='javascript' type='text/javascript' src='jqc.js'></script>\r\t<link rel='stylesheet' href='jq.css'/>\r\t</head>\r<body>\r<div class='ui-widget-content' id='formIFrameMain'>\r</div>\r<script language='javascript' type='text/javascript'>\tfunction selectEl(el){prevSelected='div:divHTML';var elx=window.document.getElementById('divTree'+el.id);if(elx!=undefined && elx!=null){alert(elx);elx.click();}return true;}\t</script></body>\r</html>",
-        "onclick": "var val=window.parent.blankHTML=window.parent.htmlUnEscape(prompt("Enter HTML",window.parent.blankHTML.replace(/&amp;quot;/g,"'")));if(val!=null){window.parent.jsonHash[window.parent.divHTML.id].c[0].blankHTML=val;setTimeout(function(){window.parent.Render(false);},10);}return false;"
+        "onclick": "var val=window.parent.blankHTML=window.parent.htmlUnEscape(prompt('Enter HTML',window.parent.blankHTML.replace(/&amp;quot;/g,'\'')));if(val!=null){window.parent.jsonHash[window.parent.divHTML.id].c[0].blankHTML=val;setTimeout(function(){window.parent.Render(false);},10);}return false;"
     },
     {
         "e": "META",
