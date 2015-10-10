@@ -1,44 +1,184 @@
-jsonHash['divHTML'].c=[
+jsonHash[divHTML.id].c=[
     {
-        "e": "HEADER",
-        "id": "HEADERPage",
+        "e": "button",
+        "id": "buttonBLANKHTML",
+        "innerHTML": "HTML Template",
+        "onclick": "window.parent.blankHTML=window.parent.htmlUnEscape(prompt("Enter HTML",window.parent.blankHTML));setTimeout(function(){window.parent.Render(false);},10);"
+    },
+    {
+        "e": "META",
+        "id": "METACharset",
         "contenteditable": "false",
         "innerHTML": "",
         "style": {},
-        "c": []
+        "c": [],
+        "name": "description"
     },
     {
-        "e": "MENU",
-        "id": "MENUMain",
-        "contenteditable": "false",
-        "innerHTML": "",
-        "style": {}
-    },
-    {
-        "e": "ASIDE",
-        "id": "ASIDELeftMenu",
+        "e": "META",
+        "id": "METADescription",
         "contenteditable": "false",
         "innerHTML": "",
         "style": {},
-        "c": []
+        "c": [],
+        "name": "description"
     },
     {
-        "e": "ASIDE",
-        "id": "ASIDERightAd",
+        "e": "META",
+        "id": "METAKeywords",
         "contenteditable": "false",
         "innerHTML": "",
-        "style": {}
+        "style": {},
+        "c": [],
+        "name": "keywords"
     },
     {
-        "e": "ARTICLE",
-        "id": "ARTICLEMain",
+        "e": "META",
+        "id": "METAAuthor",
+        "contenteditable": "false",
+        "innerHTML": "",
+        "style": {},
+        "name": "author"
+    },
+    {
+        "e": "META",
+        "id": "METAViewport",
+        "contenteditable": "false",
+        "innerHTML": "",
+        "style": {},
+        "name": "author"
+    },
+    {
+        "e": "STYLE",
+        "id": "STYLENomalize",
+        "contenteditable": "false",
+        "innerHTML": "",
+        "style": {},
+        "c": [],
+        "name": "description"
+    },
+    {
+        "e": "STYLE",
+        "id": "STYLEMain",
+        "contenteditable": "false",
+        "innerHTML": "",
+        "style": {},
+        "c": [],
+        "name": "description"
+    },
+    {
+        "e": "MAIN",
+        "ondragstart": "dragged = event.target;",
+        "ondrop": " event.preventDefault();dragged.parentNode.removeChild( dragged );event.target.appendChild( dragged );",
+        "id": "MAINPage",
         "contenteditable": "false",
         "innerHTML": "",
         "style": {},
         "c": [
             {
                 "e": "HEADER",
-                "id": "HEADERMain",
+                "id": "HEADERPage",
+                "contenteditable": "false",
+                "innerHTML": "",
+                "style": {},
+                "c": [
+                    {
+                        "e": "HGROUP",
+                        "id": "HGROUPPage",
+                        "contenteditable": "false",
+                        "innerHTML": "",
+                        "style": {},
+                        "c": [
+                            {
+                                "e": "H2",
+                                "id": "HPageTitle",
+                                "contenteditable": "false",
+                                "innerHTML": "Title",
+                                "style": {},
+                                "c": []
+                            },
+                            {
+                                "e": "H4",
+                                "id": "HPageSubTitle",
+                                "contenteditable": "false",
+                                "innerHTML": "SubTitle",
+                                "style": {}
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "e": "NAV",
+                "id": "NAVMain",
+                "contenteditable": "false",
+                "innerHTML": "",
+                "style": {},
+                "c": [
+                    {
+                        "e": "UL",
+                        "id": "ULNavMain",
+                        "contenteditable": "false",
+                        "innerHTML": "",
+                        "style": {},
+                        "c": [
+                            {
+                                "e": "LI",
+                                "id": "LINavMain",
+                                "contenteditable": "false",
+                                "innerHTML": "",
+                                "style": {},
+                                "c": [
+                                    {
+                                        "e": "A",
+                                        "id": "ANavMain",
+                                        "contenteditable": "false",
+                                        "innerHTML": "Nav%201",
+                                        "style": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "e": "ASIDE",
+                "id": "ASIDELeftMenu",
+                "contenteditable": "false",
+                "innerHTML": "",
+                "style": {},
+                "c": [
+                    {
+                        "e": "UL",
+                        "id": "ULLeftMenu",
+                        "contenteditable": "false",
+                        "innerHTML": "",
+                        "style": {},
+                        "c": [
+                            {
+                                "e": "LI",
+                                "id": "LILeftMenu",
+                                "contenteditable": "false",
+                                "innerHTML": "",
+                                "style": {},
+                                "c": [
+                                    {
+                                        "e": "A",
+                                        "id": "ALeftMenu",
+                                        "contenteditable": "false",
+                                        "innerHTML": "Left%20Menu%201",
+                                        "style": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "e": "ASIDE",
+                "id": "ASIDERightAd",
                 "contenteditable": "false",
                 "innerHTML": "",
                 "style": {}
@@ -48,22 +188,456 @@ jsonHash['divHTML'].c=[
                 "id": "SECTIONMain",
                 "contenteditable": "false",
                 "innerHTML": "",
-                "style": {}
+                "style": {},
+                "c": [
+                    {
+                        "e": "ARTICLE",
+                        "id": "ARTICLEMain",
+                        "contenteditable": "false",
+                        "innerHTML": "",
+                        "style": {},
+                        "c": [
+                            {
+                                "e": "HEADER",
+                                "id": "HEADERMain",
+                                "contenteditable": "false",
+                                "innerHTML": "",
+                                "style": {}
+                            },
+                            {
+                                "e": "SUMMARY",
+                                "id": "SUMMARYMain",
+                                "contenteditable": "false",
+                                "innerHTML": "",
+                                "style": {}
+                            },
+                            {
+                                "e": "DETAILS",
+                                "id": "DETAILSArticle",
+                                "contenteditable": "false",
+                                "innerHTML": "",
+                                "style": {},
+                                "c": [
+                                    {
+                                        "e": "SUMMARY",
+                                        "id": "SUMMARYDetails",
+                                        "contenteditable": "false",
+                                        "innerHTML": "Details%20Summary",
+                                        "style": {}
+                                    },
+                                    {
+                                        "e": "SECTION",
+                                        "id": "SECTIONArticle",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {},
+                                        "c": [
+                                            {
+                                                "e": "P",
+                                                "id": "PArticle",
+                                                "contenteditable": "false",
+                                                "innerHTML": "",
+                                                "style": {},
+                                                "c": [
+                                                    {
+                                                        "e": "SAMP",
+                                                        "id": "SAMPArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {}
+                                                    },
+                                                    {
+                                                        "e": "TABLE",
+                                                        "id": "TABLEDetails",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {},
+                                                        "c": [
+                                                            {
+                                                                "e": "CAPTION",
+                                                                "id": "CAPTIONDetails",
+                                                                "contenteditable": "false",
+                                                                "innerHTML": "",
+                                                                "style": {},
+                                                                "c": []
+                                                            },
+                                                            {
+                                                                "e": "COLGROUP",
+                                                                "id": "COLGROUPDetails",
+                                                                "contenteditable": "false",
+                                                                "innerHTML": "",
+                                                                "style": {},
+                                                                "c": [
+                                                                    {
+                                                                        "e": "COL",
+                                                                        "id": "COLDetails",
+                                                                        "contenteditable": "false",
+                                                                        "innerHTML": "",
+                                                                        "style": {}
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "e": "THEAD",
+                                                                "id": "THEADDetails",
+                                                                "contenteditable": "false",
+                                                                "innerHTML": "",
+                                                                "style": {},
+                                                                "c": [
+                                                                    {
+                                                                        "e": "TR",
+                                                                        "id": "TRDetails",
+                                                                        "contenteditable": "false",
+                                                                        "innerHTML": "",
+                                                                        "style": {},
+                                                                        "c": [
+                                                                            {
+                                                                                "e": "TH",
+                                                                                "id": "THDetails",
+                                                                                "contenteditable": "false",
+                                                                                "innerHTML": "",
+                                                                                "style": {}
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "e": "TBODY",
+                                                                "id": "TBODYDetails",
+                                                                "contenteditable": "false",
+                                                                "innerHTML": "",
+                                                                "style": {}
+                                                            },
+                                                            {
+                                                                "e": "TFOOT",
+                                                                "id": "TFOOTDetails",
+                                                                "contenteditable": "false",
+                                                                "innerHTML": "",
+                                                                "style": {},
+                                                                "c": [
+                                                                    {
+                                                                        "e": "TR",
+                                                                        "id": "TRDetails",
+                                                                        "contenteditable": "false",
+                                                                        "innerHTML": "",
+                                                                        "style": {},
+                                                                        "c": [
+                                                                            {
+                                                                                "e": "TD",
+                                                                                "id": "TDDetails",
+                                                                                "contenteditable": "false",
+                                                                                "innerHTML": "",
+                                                                                "style": "",
+                                                                                "c": [
+                                                                                    {
+                                                                                        "e": "DATA",
+                                                                                        "id": "DATADetails"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "e": "CITE",
+                                                        "id": "CITEArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {}
+                                                    },
+                                                    {
+                                                        "e": "CODE",
+                                                        "id": "CODEArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {}
+                                                    },
+                                                    {
+                                                        "e": "DFN",
+                                                        "id": "DFNArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {}
+                                                    },
+                                                    {
+                                                        "e": "EM",
+                                                        "id": "EMArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {}
+                                                    },
+                                                    {
+                                                        "e": "MARK",
+                                                        "id": "MARKArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {},
+                                                        "c": []
+                                                    },
+                                                    {
+                                                        "e": "DL",
+                                                        "id": "DLArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {},
+                                                        "c": [
+                                                            {
+                                                                "e": "DT",
+                                                                "id": "DTArticle",
+                                                                "contenteditable": "false",
+                                                                "innerHTML": "",
+                                                                "style": {},
+                                                                "accesskey": "Term"
+                                                            },
+                                                            {
+                                                                "e": "DD",
+                                                                "id": "DDArticle",
+                                                                "contenteditable": "false",
+                                                                "innerHTML": "",
+                                                                "style": {},
+                                                                "accesskey": "Term Definition"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "e": "Q",
+                                                        "id": "QArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {}
+                                                    },
+                                                    {
+                                                        "e": "ABBR",
+                                                        "id": "ABBRArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {}
+                                                    },
+                                                    {
+                                                        "e": "STRONG",
+                                                        "id": "STRONGArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {}
+                                                    },
+                                                    {
+                                                        "e": "MATH",
+                                                        "id": "MATHArticle",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {}
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "e": "FIGURE",
+                                        "id": "FIGUREDetails",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {},
+                                        "c": [
+                                            {
+                                                "e": "FIGCAPTION",
+                                                "id": "FIGCAPTIONDetails",
+                                                "contenteditable": "false",
+                                                "innerHTML": "",
+                                                "style": {}
+                                            },
+                                            {
+                                                "e": "IMG",
+                                                "id": "IMGDetails",
+                                                "contenteditable": "false",
+                                                "innerHTML": "",
+                                                "style": {},
+                                                "src": "steel.jpg"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "title": ""
+                            },
+                            {
+                                "e": "FIGURE",
+                                "id": "FIGUREArticle",
+                                "contenteditable": "false",
+                                "innerHTML": "",
+                                "style": {},
+                                "c": [
+                                    {
+                                        "e": "FIGCAPTION",
+                                        "id": "FIGCAPTIONArticle",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "e": "FORM",
+                        "id": "FORMMain",
+                        "contenteditable": "false",
+                        "innerHTML": "",
+                        "style": {},
+                        "c": [
+                            {
+                                "e": "FIELDSET",
+                                "id": "FIELDSETMain",
+                                "contenteditable": "false",
+                                "innerHTML": "",
+                                "style": {},
+                                "c": [
+                                    {
+                                        "e": "LEGEND",
+                                        "id": "LEGENDForm",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {}
+                                    },
+                                    {
+                                        "e": "LABEL",
+                                        "id": "LABELForm",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {},
+                                        "c": [
+                                            {
+                                                "e": "INPUT",
+                                                "id": "INPUTForm",
+                                                "contenteditable": "false",
+                                                "innerHTML": "",
+                                                "style": {},
+                                                "list": "DATALISTForm"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "e": "DATALIST",
+                                        "id": "DATALISTForm",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {},
+                                        "c": [
+                                            {
+                                                "e": "OPTION",
+                                                "id": "OPTIONDLForm",
+                                                "contenteditable": "false",
+                                                "innerHTML": "",
+                                                "style": {},
+                                                "value": "Option 1"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "e": "SELECT",
+                                        "id": "SELECTForm",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {},
+                                        "c": [
+                                            {
+                                                "e": "OPTGROUP",
+                                                "id": "OPTGROUPForm",
+                                                "contenteditable": "false",
+                                                "innerHTML": "",
+                                                "style": {},
+                                                "c": [
+                                                    {
+                                                        "e": "OPTION",
+                                                        "id": "OPTIONForm",
+                                                        "contenteditable": "false",
+                                                        "innerHTML": "",
+                                                        "style": {},
+                                                        "value": "Select 1",
+                                                        "title": ""
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "e": "PROGRESS",
+                                        "id": "PROGRESSArticle",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {},
+                                        "value": "34",
+                                        "max": "100"
+                                    },
+                                    {
+                                        "e": "METER",
+                                        "id": "METERCount",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {},
+                                        "max": "100",
+                                        "min": "0",
+                                        "low": "10",
+                                        "optimum": "88",
+                                        "value": "44",
+                                        "high": "66"
+                                    },
+                                    {
+                                        "e": "OUTPUT",
+                                        "id": "OUTPUTForm",
+                                        "contenteditable": "false",
+                                        "innerHTML": "",
+                                        "style": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "e": "KEYGEN",
+                                "id": "KEYGENForm",
+                                "contenteditable": "false",
+                                "innerHTML": "",
+                                "style": {}
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "e": "ASIDE",
-                "id": "ASIDELeftMain",
+                "e": "FOOTER",
+                "id": "FOOTERPage",
                 "contenteditable": "false",
                 "innerHTML": "",
-                "style": {}
+                "style": {},
+                "c": [
+                    {
+                        "e": "TIME",
+                        "id": "TIMEPage",
+                        "contenteditable": "false",
+                        "innerHTML": "",
+                        "style": {}
+                    },
+                    {
+                        "e": "ADDRESS",
+                        "id": "ADDRESSPage",
+                        "contenteditable": "false",
+                        "innerHTML": "",
+                        "style": {}
+                    }
+                ]
+            },
+            {
+                "e": "DIALOG",
+                "ondragstart": "event.dataTransfer.setData('text/plain',null)",
+                "open": "true",
+                "id": "DIALOGMain",
+                "contenteditable": "false",
+                "innerHTML": "",
+                "style": {},
+                "draggable": "true"
             }
-        ]
-    },
-    {
-        "e": "FOOTER",
-        "id": "FOOTERPage",
-        "contenteditable": "false",
-        "innerHTML": "",
-        "style": {}
+        ],
+        "dropzone": "move"
     }
 ]
