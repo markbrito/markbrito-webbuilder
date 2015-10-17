@@ -76,30 +76,30 @@ jsonHash[divHTML.id].c=[
             },
             {
                 "e": "ASIDE",
-                "id": "ASIDELeftMenu",
+                "id": "ASIDERightMenu",
                 "contenteditable": "false",
                 "innerHTML": "",
                 "style": {},
                 "c": [
                     {
                         "e": "UL",
-                        "id": "ULLeftMenu",
+                        "id": "ULRightMenu",
                         "contenteditable": "false",
                         "innerHTML": "",
                         "style": {},
                         "c": [
                             {
                                 "e": "LI",
-                                "id": "LILeftMenu",
+                                "id": "LIRightMenu",
                                 "contenteditable": "false",
                                 "innerHTML": "",
                                 "style": {},
                                 "c": [
                                     {
                                         "e": "A",
-                                        "id": "ALeftMenu",
+                                        "id": "ARightMenu",
                                         "contenteditable": "false",
-                                        "innerHTML": "Left%20Menu%201",
+                                        "innerHTML": "Right%20Menu%201",
                                         "style": {}
                                     }
                                 ]
