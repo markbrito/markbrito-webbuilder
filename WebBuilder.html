@@ -10916,7 +10916,7 @@ var burl = prompt('Enter HTML Template URL', 'html5template.html');
             iFrameHTML = document.getElementById('iFrameHTML');
             iFrameHTML.contentDocument.documentElement.innerHTML = blankHTML;
             setTimeout('formIFrameMain=iFrameHTML.contentDocument.getElementById("formIFrameMain");textJSON = loadJSON();Render(true);alert("BETA Version, Please Use Google Chrome");', 25);
-      });
+ 
             window.onbeforeunload = function (e) {
                 autoSave();
                 var message = "Navigating Away?  Auto Save Snapshot Taken, make sure you've saved your work.";
@@ -10926,7 +10926,9 @@ var burl = prompt('Enter HTML Template URL', 'html5template.html');
                 }
                 return message;
             }
-}});
+})
+}
+});
 var rotateY = 0;
 var rotateX = 0;
 var rotateZ = 0;
