@@ -9576,6 +9576,14 @@
 ';
         var blankHTML = $('<div/>').html('&lt;!doctype html&gt;&#13;&lt;html&gt;&#13;&#09;&lt;head&gt;&#13;&#09;&lt;meta charset=&quot;utf-8&quot;/&gt;&#13;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;/&gt;&#13;&lt;meta name=&quot;description&quot; content=&quot;&quot;/&gt;&#13;&lt;meta name=&quot;author&quot; content=&quot;&quot;/&gt;&#13;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/&gt;&#13;&lt;title&gt;&lt;/title&gt;&#13;&#09;&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot; src=&quot;jq.js&quot;&gt;&lt;/script&gt;&#13;&#09;&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot; src=&quot;jqc.js&quot;&gt;&lt;/script&gt;&#13;&#09;&lt;link rel=&quot;stylesheet&quot; href=&quot;jq.css&quot;/&gt;&#13;&#09;&lt;/head&gt;&#13;&lt;body&gt;&#13;&lt;div class=&quot;ui-widget-content&quot; id=&quot;formIFrameMain&quot;&gt;&#13;&lt;/div&gt;&#13;&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;&#09;function selectEl(el){prevSelected=&quot;div:divHTML&quot;;var elx=window.document.getElementById(&quot;divTree&quot;+el.id);if(elx!=undefined && elx!=null){alert(elx);elx.click();}return true;}&#09;&lt;/script&gt;&lt;/body&gt;&#13;&lt;/html&gt;').text();
 // dropzone="text/plain text/html video/mp4 video/webm video/ogg image/png image/gif image/jpg" contenteditable="true"
+<<<<<<< HEAD
+=======
+var burl = prompt('Enter HTML Template URL', '');
+            if (burl != null && burl!='' && burl != undefined) {
+                $.ajax(burl).done(function (responseText) { blankHTML=(responseText); 
+                Render(false); });
+            }
+>>>>>>> 341b1730ebbf56d350e64a95f2fe5f64a29135fd
         var contentToSave = '';
 function selectEl(el){prevSelected="div:divHTML";var elx=window.document.getElementById("divTree"+el.id);if(elx!=undefined && elx!=null){alert(elx);elx.click();}return true;}
         function SaveContent() {
@@ -10916,7 +10924,7 @@ var burl = prompt('Enter HTML Template URL', 'html5template.html');
             iFrameHTML = document.getElementById('iFrameHTML');
             iFrameHTML.contentDocument.documentElement.innerHTML = blankHTML;
             setTimeout('formIFrameMain=iFrameHTML.contentDocument.getElementById("formIFrameMain");textJSON = loadJSON();Render(true);alert("BETA Version, Please Use Google Chrome");', 25);
-      });
+      }
             window.onbeforeunload = function (e) {
                 autoSave();
                 var message = "Navigating Away?  Auto Save Snapshot Taken, make sure you've saved your work.";
